@@ -1,0 +1,96 @@
+@import
+  "abstracts/modules";
+
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+h1 span, h2 span, h3 span {
+  font-weight: normal;
+  letter-spacing: 4px;
+  font-size: 17px;
+  display: block;
+  line-height: 30px;
+  color: $text-gray;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 15px;
+  color: $text-gray;
+  font-family: sans-serif;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  color: white;
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/hero-slide1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gallery {
+  background: #d1d1c9;
+  padding: 1px 0px;
+
+}
+
+.rafting {
+  background: url("../img/home/raft.jpg");
+  @include trip;
+}
+
+.base-camp {
+  background: url("../img/home/basecamp.jpg");
+  @include trip;
+}
+
+.backpacking {
+  background: url("../img/home/backpacking.jpg");
+  @include trip;
+}
+
+.canoe {
+  background: url("../img/home/canoe.jpg");
+  @include trip;
+}
+
+.photography {
+  background: url("../img/home/photo.jpg");
+  @include trip;
+}
+
+.custom {
+  background: url("../img/home/custom.jpg");
+  @include trip;
+}
+
+#experience {
+  background: #e6e6e0;
+  border-top: 1px solid white;
+}
+#experience-items {
+  display: none;
+}
+#experience-text {
+  line-height: 24px;
+  text-align: center;
+  padding: 60px 0px;
+}
