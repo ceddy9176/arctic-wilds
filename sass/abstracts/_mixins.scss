@@ -5,3 +5,11 @@
   width: auto;
   margin: 5%;
 }
+
+@mixin reset {
+}
+
+@mixin child2-4 {
+  width: 50%;
+  height: 33.3vh;
+}
